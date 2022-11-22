@@ -9,7 +9,6 @@ import java.util.List;
 public class OutputView {
 
     private OutputDevice device;
-    private Integer x;
 
     public OutputView(OutputDevice device) {
         this.device = device;
@@ -19,15 +18,15 @@ public class OutputView {
         device.print("다리 건너기 게임을 시작합니다.");
     }
 
-    public void a() {
+    public void promptBridgeSize() {
         device.print("다리의 길이를 입력해주세요.");
     }
 
-    public void b() {
+    public void promptNextMove() {
         device.print("이동할 칸을 선택해주세요. (위: U, 아래: D)");
     }
 
-    public void c() {
+    public void promptRetry() {
         device.print("게임을 다시 시도할지 여부를 입력해주세요. (재시도: R, 종료: Q)");
     }
 
